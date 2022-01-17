@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style type="text/css">
+        .content {
+            max-width:500px;
+            margin: auto;
+            padding:10px;
+        }
+
+		.reply_content {
+			text-align:right	
+		}
+
+		.reply_content .reply{
+			border-radius: 0.5em;
+			display: block;
+			margin: 4px;
+			padding: 3px 10px;
+		}
+
+		.board_for_read {
+			width: 100%;
+			background-color:#f1f1f1;
+		}
+
+		#title {
+			height: 32px;
+			width: 100%;
+			border-radius: 0.5em;
+			border: none;
+			font-family: inherit;
+			font-size: inherit;
+			background: none;
+		}
+
+        textarea {
+			width: 100%;
+            font-family: inherit;
+            font-size: 100%;
+			resize: none;
+			border-radius: 0.5em;
+			padding-block: 10px;
+			border: 0px;
+			background: none;
+        }
+
+		.td_title {
+			background-color: #d8d8d8
+		}
+    </style>
+<body>
+    <div class="content">
+
+		<table class="board_for_read">
+			<tbody>
+				<tr>
+					<td class="td_title" style="text-align:center; width:20%;">제목</td>
+					<td style="padding:10px;">
+						<input type="text" name="title" id="title" value="테스트" readonly/>
+					</td>
+				</tr>
+				<tr>
+					<td class="td_title" style="text-align:center; width:20%;">작성일자</td>
+					<td style="padding:10px;">
+						<span>2021.01.01</span>
+					</td>
+				</tr>
+				<tr>
+					<td class="td_title" style="text-align:center;">내용</td>
+					<td style="padding:10px;">
+						<textarea name="detail" id="detail" rows="10" readonly>
+테스트
+테스트
+
+테스트
+						</textarea>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div style="text-align:left;">
+			<a href="#">> Home</a>
+		</div>
+
+		<table class="board_for_read">
+			<tbody>
+				<tr>
+					<td colspan="2" class="td_title" style="text-align:left; padding-left:10px; height:30px;">leave a comment</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">
+						<input type="text" name="comment" id="comment" style="width:100%">
+					</td>
+					<td><input type="submit" value="save"></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="reply_content">
+				<span class="reply">내용1 [2022.01.01]</span>
+				<span class="reply">내용2 [2022.01.01]</span>
+				<span class="reply">내용3 [2022.01.01]</span>
+				<span class="reply">내용4 [2022.01.01]</span>
+				<span class="reply">내용5 [2022.01.01]</span>
+		</div>
+    </div>
+</body>
+</html>
